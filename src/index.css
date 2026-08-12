@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0b0f19;
+    color: #f8fafc;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+.font-diploma {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle background grid pattern for enterprise dark mode */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Presentation Light Mode (Projector Optimization) */
+body.light-mode {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+body.light-mode .bg-\[\#09031a\],
+body.light-mode .bg-\[\#0d0726\],
+body.light-mode .bg-\[\#0b0f19\],
+body.light-mode .bg-\[\#05010d\] {
+  background-color: #f8fafc !important;
+}
+
+body.light-mode .bg-white\/5 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-mode .bg-white\/10 {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+
+body.light-mode .border-white\/10,
+body.light-mode .border-white\/5 {
+  border-color: #e2e8f0 !important;
+}
+
+body.light-mode .border-white\/20 {
+  border-color: #cbd5e1 !important;
+}
+
+body.light-mode .text-white {
+  color: #0f172a !important;
+}
+
+body.light-mode .text-gray-300, 
+body.light-mode .text-slate-300, 
+body.light-mode .text-gray-400, 
+body.light-mode .text-slate-400 {
+  color: #334155 !important;
+}
+
+body.light-mode .text-gray-200, 
+body.light-mode .text-slate-200 {
+  color: #1e293b !important;
+}
+
+/* Printable Certificate Media Styles */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  body > div > *:not(main),
+  main > div > *:not(.lg\:col-span-2),
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  #printable-certificate-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 2.5rem !important;
+    background-color: #0d0726 !important;
+    color: #ffffff !important;
+    border: 3px solid #7c3aed !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Nebula - Blockchain Certificate System",
+  "description": "A fully functional academic certificate verification and validation system using a C# blockchain engine with cryptographic hashing, Merkle proof validation, university issuer portal, verifier app, student vault, and C# code runner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
